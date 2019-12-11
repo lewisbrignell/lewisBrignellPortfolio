@@ -25,6 +25,22 @@ html {
 //     color: ;
 // }
 
+img {
+    width: 100%;
+}
+
 
 
 // style stripping
+
+h1,
+h2,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
