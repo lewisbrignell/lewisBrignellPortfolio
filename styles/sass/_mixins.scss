@@ -1,0 +1,21 @@
+// variable declarations and mixins for media queries 
+
+// variable declarations
+$backgroundMain: #ddf;
+$backgroundSecond: #00a;
+$textMain: #000;
+$headingMain: lime;
+
+
+// media query mixins
+@mixin forDesktop {
+  @media (max-width: 1600px) { @content; }
+}
+
+@mixin forTablet {
+  @media (max-width: 1024px) { @content; }
+}
+
+@mixin forPhone {
+  @media (max-width: 599px) { @content; }
+}
