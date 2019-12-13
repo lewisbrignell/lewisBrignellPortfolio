@@ -1,13 +1,9 @@
 // header styles
 
 header {
-    height: 100vh;
-
     position: relative;
 
-    background: $backgroundMain;
-
-    .rightSection {
+    .sixty {
         @include forDesktop {
             padding-top: 200px;
         }   
@@ -15,11 +11,8 @@ header {
 
     h2 {
         margin-top: 10px;
+        font-size: 4.0rem;
         color: $headingMain;
-    }
-
-    p {
-        margin-top: 20px;
     }
 
     .talk {

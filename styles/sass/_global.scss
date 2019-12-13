@@ -3,9 +3,33 @@
 // general class declarations
 
 .wrapper {
-    width: 90%;
+    width: 96%;
     max-width: 1480px;
     margin: 0 auto;
+}
+
+// style stripping
+
+h1,
+h2,
+h3,
+ul,
+a,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
 }
 
 
@@ -21,7 +45,7 @@ html {
 
 body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background: #000;
+    background: $backgroundMain;
     color: #fff;
 }
 
@@ -48,7 +72,9 @@ h1 {
 
 h2 {
     @include forDesktop {
-        font-size: 4.0rem;
+        margin-bottom: 10px;
+        
+        font-size: 5.0rem;
     }
 }
 
@@ -61,9 +87,15 @@ h3 {
 a,
 p {
     @include forDesktop {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
     }
 }
+
+p {
+    display: inline-block;
+    margin-top: 20px;
+}
+
 
 a.highlighted {
     padding: 10px 20px;
@@ -94,45 +126,35 @@ p {
     color: $textMain;
 }
 
+header,
+section {
+    @include forDesktop {
+        height: 100vh;
+    }
+    
+    background: $backgroundMain;
+}
+
 .flexParent {
     display: flex;
 }
 
-.leftSection {
+.forty {
     @include forDesktop {
         width: 40%;
     }
 }
 
-.rightSection {
+.sixty {
     @include forDesktop {
         width: 60%;
+        padding: 0 40px;
     }
 }
 
-
-// style stripping
-
-h1,
-h2,
-h3,
-ul,
-a,
-p {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    border: none;
+.forty,
+.sixty {
+    height: 100vh;
 }
 
 

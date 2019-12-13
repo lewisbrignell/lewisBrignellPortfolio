@@ -180,9 +180,31 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .wrapper {
-  width: 90%;
+  width: 96%;
   max-width: 1480px;
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+ul,
+a,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
 }
 
 html {
@@ -191,7 +213,7 @@ html {
 
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  background: #000;
+  background: #1f1f1f;
   color: #fff;
 }
 
@@ -218,7 +240,8 @@ p {
 
 @media (max-width: 1600px) {
   h2 {
-    font-size: 4.0rem;
+    margin-bottom: 10px;
+    font-size: 5.0rem;
   }
 }
 
@@ -231,8 +254,13 @@ p {
 @media (max-width: 1600px) {
   a,
   p {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
+}
+
+p {
+  display: inline-block;
+  margin-top: 20px;
 }
 
 a.highlighted {
@@ -265,6 +293,18 @@ p {
   color: #fff;
 }
 
+header,
+section {
+  background: #1f1f1f;
+}
+
+@media (max-width: 1600px) {
+  header,
+  section {
+    height: 100vh;
+  }
+}
+
 .flexParent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,58 +312,37 @@ p {
 }
 
 @media (max-width: 1600px) {
-  .leftSection {
+  .forty {
     width: 40%;
   }
 }
 
 @media (max-width: 1600px) {
-  .rightSection {
+  .sixty {
     width: 60%;
+    padding: 0 40px;
   }
 }
 
-h1,
-h2,
-h3,
-ul,
-a,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  border: none;
+.forty,
+.sixty {
+  height: 100vh;
 }
 
 header {
-  height: 100vh;
   position: relative;
-  background: #1f1f1f;
 }
 
 @media (max-width: 1600px) {
-  header .rightSection {
+  header .sixty {
     padding-top: 200px;
   }
 }
 
 header h2 {
   margin-top: 10px;
+  font-size: 4.0rem;
   color: #A8D4FF;
-}
-
-header p {
-  margin-top: 20px;
 }
 
 header .talk {
@@ -387,4 +406,13 @@ header .talk {
 .socialMediaNav .socialList .socialLink a.highlighted {
   padding: 5px 15px;
   margin-right: 10px;
+}
+
+.aboutSection .sixty {
+  padding-top: 140px;
+  background: darkslateblue;
+}
+
+.aboutSection .forty {
+  background: #1f1f1f;
 }
