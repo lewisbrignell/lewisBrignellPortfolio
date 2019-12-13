@@ -19,16 +19,96 @@ html {
     font-size: 62.5%;
 }
 
-// body {
-//     font-family: ;
-//     background: ;
-//     color: ;
-// }
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
 
 img {
     width: 100%;
 }
 
+h1,
+h2 {
+    font-weight: 600;
+}
+
+h3,
+a,
+p {
+    font-weight: 300;
+}
+
+h1 {
+    @include forDesktop {
+        font-size: 8.0rem;
+    }
+}
+
+h2 {
+    @include forDesktop {
+        font-size: 4.0rem;
+    }
+}
+
+h3 {
+    @include forDesktop {
+        font-size: 3.6rem;
+    }
+}
+
+a,
+p {
+    @include forDesktop {
+        font-size: 2.5rem;
+    }
+}
+
+a.highlighted {
+    padding: 10px 20px;
+    border-radius: 40px;
+
+    font-weight: 600;
+    color: $backgroundMain;
+    background: $textMain;
+
+    @include forDesktop {
+        font-size: 2.0rem;
+    }
+}
+
+i {
+    @include forDesktop {
+        font-size: 3.5rem;
+    }
+}
+
+h1,
+h2,
+h3,
+a,
+p {
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    color: $textMain;
+}
+
+.flexParent {
+    display: flex;
+}
+
+.leftSection {
+    @include forDesktop {
+        width: 40%;
+    }
+}
+
+.rightSection {
+    @include forDesktop {
+        width: 60%;
+    }
+}
 
 
 // style stripping
@@ -49,5 +129,10 @@ ul {
 
 a {
     text-decoration: none;
-    color: #000;
 }
+
+button {
+    border: none;
+}
+
+

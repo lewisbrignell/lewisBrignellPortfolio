@@ -1,0 +1,75 @@
+// header styles
+
+header {
+    height: 100vh;
+
+    position: relative;
+
+    background: $backgroundMain;
+
+    .rightSection {
+        @include forDesktop {
+            padding-top: 140px;
+        }   
+    }
+
+    h2 {
+        margin-top: 10px;
+        color: $headingMain;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+
+    .talk {
+        position: absolute;
+        top: 40px;
+        right: 100px;
+    }
+}
+
+.mainNav {
+    position: absolute;
+    top: 0;
+    left: -1000px;
+
+    a {
+        font-size: 3.6rem;
+    }
+
+    .navList {
+        height: 100vh;
+        padding: 50px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+}
+
+.socialMediaNav {
+    margin-top: 50px;
+
+    .socialList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+
+        .socialLink {
+            margin-top: 20px;
+        }
+
+        .socialLink a {
+            padding: 20px;
+        }
+
+        .socialLink a.highlighted {
+            padding: 5px 15px;
+            margin-right: 10px;
+        }
+
+    }
+}

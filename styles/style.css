@@ -189,8 +189,98 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
 img {
   width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h3,
+a,
+p {
+  font-weight: 300;
+}
+
+@media (max-width: 1600px) {
+  h1 {
+    font-size: 8.0rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  h2 {
+    font-size: 4.0rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  h3 {
+    font-size: 3.6rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  a,
+  p {
+    font-size: 2.5rem;
+  }
+}
+
+a.highlighted {
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  color: #1f1f1f;
+  background: #fff;
+}
+
+@media (max-width: 1600px) {
+  a.highlighted {
+    font-size: 2.0rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  i {
+    font-size: 3.5rem;
+  }
+}
+
+h1,
+h2,
+h3,
+a,
+p {
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.flexParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1600px) {
+  .leftSection {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .rightSection {
+    width: 60%;
+  }
 }
 
 h1,
@@ -209,5 +299,90 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000;
+}
+
+button {
+  border: none;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  background: #1f1f1f;
+}
+
+@media (max-width: 1600px) {
+  header .rightSection {
+    padding-top: 140px;
+  }
+}
+
+header h2 {
+  margin-top: 10px;
+  color: #A8D4FF;
+}
+
+header p {
+  margin-top: 20px;
+}
+
+header .talk {
+  position: absolute;
+  top: 40px;
+  right: 100px;
+}
+
+.mainNav {
+  position: absolute;
+  top: 0;
+  left: -1000px;
+}
+
+.mainNav a {
+  font-size: 3.6rem;
+}
+
+.mainNav .navList {
+  height: 100vh;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.socialMediaNav {
+  margin-top: 50px;
+}
+
+.socialMediaNav .socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialMediaNav .socialList .socialLink {
+  margin-top: 20px;
+}
+
+.socialMediaNav .socialList .socialLink a {
+  padding: 20px;
+}
+
+.socialMediaNav .socialList .socialLink a.highlighted {
+  padding: 5px 15px;
+  margin-right: 10px;
 }
