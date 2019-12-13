@@ -1,0 +1,41 @@
+// styles for skill set section within main
+
+.skillsSection {
+    .sixty {
+        padding-top: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: darkred;
+    }
+
+    .forty {
+
+    }
+
+    .skillsList {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .skillItem {
+        margin: 40px;
+    }
+
+    i {
+        @include forDesktop {
+            font-size: 10.0rem;
+        }
+        
+    }
+
+    .skillItem img {
+        @include forDesktop {
+            max-width: 100px;
+            max-height: 101px;
+        }
+    }
+}

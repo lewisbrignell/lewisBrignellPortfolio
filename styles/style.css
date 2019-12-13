@@ -311,6 +311,10 @@ section {
   display: flex;
 }
 
+.forty {
+  background: #1f1f1f;
+}
+
 @media (max-width: 1600px) {
   .forty {
     width: 40%;
@@ -320,13 +324,14 @@ section {
 @media (max-width: 1600px) {
   .sixty {
     width: 60%;
-    padding: 0 40px;
   }
 }
 
 .forty,
 .sixty {
   height: 100vh;
+  padding: 0 40px;
+  padding-top: 140px;
 }
 
 header {
@@ -409,10 +414,49 @@ header .talk {
 }
 
 .aboutSection .sixty {
-  padding-top: 140px;
   background: darkslateblue;
 }
 
-.aboutSection .forty {
-  background: #1f1f1f;
+.skillsSection .sixty {
+  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: darkred;
+}
+
+.skillsSection .skillsList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skillsSection .skillItem {
+  margin: 40px;
+}
+
+@media (max-width: 1600px) {
+  .skillsSection i {
+    font-size: 10.0rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .skillsSection .skillItem img {
+    max-width: 100px;
+    max-height: 101px;
+  }
+}
+
+.portfolioSection .sixty {
+  background: darkolivegreen;
 }
