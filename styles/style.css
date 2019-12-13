@@ -231,7 +231,7 @@ p {
 @media (max-width: 1600px) {
   a,
   p {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -245,7 +245,7 @@ a.highlighted {
 
 @media (max-width: 1600px) {
   a.highlighted {
-    font-size: 2.0rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -313,7 +313,7 @@ header {
 
 @media (max-width: 1600px) {
   header .rightSection {
-    padding-top: 140px;
+    padding-top: 200px;
   }
 }
 
@@ -356,8 +356,10 @@ header .talk {
       justify-content: space-around;
 }
 
-.socialMediaNav {
-  margin-top: 50px;
+@media (max-width: 1600px) {
+  .socialMediaNav {
+    margin-top: 150px;
+  }
 }
 
 .socialMediaNav .socialList {

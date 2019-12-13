@@ -9,7 +9,7 @@ header {
 
     .rightSection {
         @include forDesktop {
-            padding-top: 140px;
+            padding-top: 200px;
         }   
     }
 
@@ -50,7 +50,10 @@ header {
 }
 
 .socialMediaNav {
-    margin-top: 50px;
+    @include forDesktop {
+        margin-top: 150px;
+    }
+    
 
     .socialList {
         display: flex;

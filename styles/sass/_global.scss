@@ -61,7 +61,7 @@ h3 {
 a,
 p {
     @include forDesktop {
-        font-size: 2.5rem;
+        font-size: 2.6rem;
     }
 }
 
@@ -74,7 +74,7 @@ a.highlighted {
     background: $textMain;
 
     @include forDesktop {
-        font-size: 2.0rem;
+        font-size: 2.4rem;
     }
 }
 
