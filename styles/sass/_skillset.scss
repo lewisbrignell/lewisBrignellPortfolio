@@ -1,17 +1,18 @@
 // styles for skill set section within main
 
 .skillsSection {
+    background: darkred;
+
     .sixty {
         padding-top: 0;
 
         display: flex;
         justify-content: center;
         align-items: center;
-
-        background: darkred;
     }
 
     .forty {
+        clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
 
     }
 

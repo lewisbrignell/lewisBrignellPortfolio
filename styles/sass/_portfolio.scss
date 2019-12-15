@@ -1,7 +1,17 @@
 // styles for skill set section within main
 
 .portfolioSection {
+    background: darkolivegreen;
+
     .sixty {
-        background: darkolivegreen;
+        
+    }
+
+    .forty {
+        clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 48% 52%, 25% 0%);
+
+        h2 {
+            text-align: right;
+        }
     }
 }

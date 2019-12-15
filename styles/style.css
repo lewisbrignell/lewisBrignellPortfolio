@@ -213,7 +213,7 @@ html {
 
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  background: #1f1f1f;
+  background: #16161d;
   color: #fff;
 }
 
@@ -267,7 +267,7 @@ a.highlighted {
   padding: 10px 20px;
   border-radius: 40px;
   font-weight: 600;
-  color: #1f1f1f;
+  color: #16161d;
   background: #fff;
 }
 
@@ -295,7 +295,7 @@ p {
 
 header,
 section {
-  background: #1f1f1f;
+  background: #16161d;
 }
 
 @media (max-width: 1600px) {
@@ -312,7 +312,7 @@ section {
 }
 
 .forty {
-  background: #1f1f1f;
+  background: #16161d;
 }
 
 @media (max-width: 1600px) {
@@ -413,8 +413,34 @@ header .talk {
   margin-right: 10px;
 }
 
-.aboutSection .sixty {
+.aboutSection {
   background: darkslateblue;
+}
+
+.aboutSection .forty {
+  padding: 0;
+  -webkit-clip-path: inset(3.5% 0 3.5% 0);
+          clip-path: inset(3.5% 0 3.5% 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1600px) {
+  .aboutSection .profilePicContainer {
+    width: 95%;
+    max-width: 500px;
+  }
+}
+
+.skillsSection {
+  background: darkred;
 }
 
 .skillsSection .sixty {
@@ -428,7 +454,11 @@ header .talk {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: darkred;
+}
+
+.skillsSection .forty {
+  -webkit-clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
 }
 
 .skillsSection .skillsList {
@@ -457,6 +487,29 @@ header .talk {
   }
 }
 
-.portfolioSection .sixty {
+.portfolioSection {
   background: darkolivegreen;
+}
+
+.portfolioSection .forty {
+  -webkit-clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 48% 52%, 25% 0%);
+          clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 48% 52%, 25% 0%);
+}
+
+.portfolioSection .forty h2 {
+  text-align: right;
+}
+
+.contactSection {
+  background: lavender;
+}
+
+.contactSection .forty {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 100%, 40% 75%, 0% 75%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 100%, 40% 75%, 0% 75%);
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
 }
