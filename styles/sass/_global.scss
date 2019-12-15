@@ -41,6 +41,7 @@ button {
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -85,7 +86,9 @@ h3 {
 }
 
 a,
-p {
+p,
+input,
+textarea {
     @include forDesktop {
         font-size: 2.2rem;
     }
@@ -94,7 +97,6 @@ p {
 p {
     display: inline-block;
     margin-top: 20px;
-
     line-height: 1.4;
 }
 

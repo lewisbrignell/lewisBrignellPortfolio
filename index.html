@@ -13,7 +13,7 @@
     <title>Lewis Brignell</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="wrapper flexParent">
             <div class="forty">
                 
@@ -24,28 +24,28 @@
                 <h2>Front-End Developer</h2>
                 <p>Based in Toronto, Canada.</p>
                 
-                <a href="#" class="highlighted talk">Let's Talk</a>
+                <a href="#contact" class="highlighted talk">Let's Talk</a>
         
                 <nav class="mainNav">
                     <ul class="navList">
-                        <li class="navLink"><a href="#">Home</a></li>
-                        <li class="navLink"><a href="#">About</a></li>
-                        <li class="navLink"><a href="#">Portfolio</a></li>
-                        <li class="navLink"><a href="#">Skills</a></li>
-                        <li class="navLink"><a href="#">Contact</a></li>
+                        <li class="navLink"><a href="#home">Home</a></li>
+                        <li class="navLink"><a href="#about">About</a></li>
+                        <li class="navLink"><a href="#skills">Skills</a></li>
+                        <li class="navLink"><a href="#portfolio">Portfolio</a></li>
+                        <li class="navLink"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav> <!-- / .mainNav -->
             
                 <nav class="socialMediaNav">
                     <ul class="socialList">
-                        <li class="socialLink"><a class="highlighted" href="#">▼ Download Resume</a></li>
-                        <li class="socialLink"><a href="#" aria-label="go to LinkedIn page"><i aria-hidden="true"
+                        <li class="socialLink"><a class="highlighted" href="./assets/Lewis_Brignell_Resume.pdf" download="Lewis_Brignell_Resume">▼ Download Resume</a></li>
+                        <li class="socialLink"><a href="https://www.linkedin.com/in/lewis-brignell/" aria-label="go to LinkedIn page"><i aria-hidden="true"
                                     class="fab fa-linkedin"></i></a></li>
-                        <li class="socialLink"><a href="#" aria-label="go to GitHub page"><i aria-hidden="true"
+                        <li class="socialLink"><a href="https://github.com/lewisbrignell" aria-label="go to GitHub page"><i aria-hidden="true"
                                     class="fab fa-github"></i></a></li>
-                        <li class="socialLink"><a href="#" aria-label="go to Twitter page"><i aria-hidden="true"
+                        <li class="socialLink"><a href="https://twitter.com/LewisBrignell" aria-label="go to Twitter page"><i aria-hidden="true"
                                     class="fab fa-twitter"></i></a></li>
-                        <li class="socialLink"><a href="#" aria-label="go to Medium blog"><i aria-hidden="true"
+                        <li class="socialLink"><a href="https://medium.com/@lewisbrignell" aria-label="go to Medium blog"><i aria-hidden="true"
                                     class="fab fa-medium"></i></a></li>
                     </ul>
                 </nav>
@@ -121,16 +121,32 @@
             <div class="wrapper flexParent">
                 <div class="forty">
                     <h2>Get In Touch</h2>
+                    <p>Have a project idea?</p>
+                    <p>Looking for a freelancer?</p>
+                    <p>Just want to get a coffee and chat?</p>
+                    <a href="tel:416-735-0272">tel: 416-735-0272</a>
+                    <a href="mailto: lewisbrignell@gmail.com">email: lewisbrignell@gmail.com</a>
                 </div>
                 <div class="sixty">
-                
+                    <form action="submit">
+                        <label for="name" class="visuallyHidden">your name here</label>
+                        <input type="text" name="name" class="name" id="name" required placeholder="your name _">
+
+                        <label for="email" class="visuallyHidden">your name here</label>
+                        <input type="email" name="email" class="email" id="email" required placeholder="your email _">
+
+                        <label for="message" class="visuallyHidden">your message here</label>
+                        <textarea name="message" id="message" class="message" cols="30" rows="10" required placeholder="your message _"></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section> <!-- / #contact -->
     </main>
 
     <footer>
-        <h3 class="copyright">Lewis Brignell © 2019</h3>
+        <p class="copyright">Lewis Brignell © 2019</p>
     </footer>
 
     <script src="./scripts/script.js"></script>
