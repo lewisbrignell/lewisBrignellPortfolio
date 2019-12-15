@@ -45,8 +45,8 @@ html {
 
 body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background: $backgroundMain;
     color: #fff;
+    background: $backgroundMain;
 }
 
 img {
@@ -94,6 +94,8 @@ p {
 p {
     display: inline-block;
     margin-top: 20px;
+
+    line-height: 1.4;
 }
 
 
@@ -122,14 +124,20 @@ h3,
 a,
 p {
     letter-spacing: 1.2px;
-    line-height: 1.2;
     color: $textMain;
+}
+
+h1,
+h2,
+h3,
+a {
+    line-height: 1.2;
 }
 
 header,
 section {
     @include forDesktop {
-        height: 100vh;
+        min-height: 90vh;
     }
     
     background: $backgroundMain;

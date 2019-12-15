@@ -213,8 +213,8 @@ html {
 
 body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  background: #16161d;
   color: #fff;
+  background: #16161d;
 }
 
 img {
@@ -261,6 +261,7 @@ p {
 p {
   display: inline-block;
   margin-top: 20px;
+  line-height: 1.4;
 }
 
 a.highlighted {
@@ -289,8 +290,14 @@ h3,
 a,
 p {
   letter-spacing: 1.2px;
-  line-height: 1.2;
   color: #fff;
+}
+
+h1,
+h2,
+h3,
+a {
+  line-height: 1.2;
 }
 
 header,
@@ -301,7 +308,7 @@ section {
 @media (max-width: 1600px) {
   header,
   section {
-    height: 100vh;
+    min-height: 90vh;
   }
 }
 
@@ -417,6 +424,10 @@ header .talk {
   background: darkslateblue;
 }
 
+.aboutSection .sixty p:nth-of-type(1) {
+  margin-top: 40px;
+}
+
 .aboutSection .forty {
   padding: 0;
   -webkit-clip-path: inset(3.5% 0 3.5% 0);
@@ -457,8 +468,13 @@ header .talk {
 }
 
 .skillsSection .forty {
-  -webkit-clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 40% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+}
+
+.skillsSection .forty p {
+  color: #A8D4FF;
+  font-size: 2.5rem;
 }
 
 .skillsSection .skillsList {
@@ -476,14 +492,14 @@ header .talk {
 
 @media (max-width: 1600px) {
   .skillsSection i {
-    font-size: 10.0rem;
+    font-size: 12.0rem;
   }
 }
 
 @media (max-width: 1600px) {
   .skillsSection .skillItem img {
-    max-width: 100px;
-    max-height: 101px;
+    max-width: 120px;
+    max-height: 121px;
   }
 }
 
