@@ -644,7 +644,7 @@ header .talk {
 }
 
 .contactSection .sixty {
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
 .contactSection form {
@@ -658,6 +658,12 @@ header .talk {
   padding: 20px 40px;
   color: #16161d;
   background: transparent;
+}
+
+.contactSection form label {
+  padding: 0 0 5px 5px;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .contactSection form input,
