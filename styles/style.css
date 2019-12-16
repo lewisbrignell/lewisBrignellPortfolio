@@ -270,6 +270,7 @@ p {
 a.highlighted {
   padding: 10px 20px;
   border-radius: 40px;
+  border: 2px solid #fff;
   font-weight: 600;
   color: #16161d;
   background: #fff;
@@ -281,10 +282,29 @@ a.highlighted {
   }
 }
 
+a.highlighted:hover,
+a.highlighted:focus {
+  color: #fff;
+  background: #16161d;
+}
+
 @media (max-width: 1600px) {
   i {
     font-size: 3.5rem;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
   }
+}
+
+a:hover i,
+a:focus i {
+  color: #A8D4FF;
+  text-shadow: 0 0 3px #A8D4FF;
+}
+
+a:active i {
+  color: #29396B;
+  text-shadow: 0 0 3px #29396B;
 }
 
 h1,
@@ -366,14 +386,82 @@ header .talk {
   right: 100px;
 }
 
-.mainNav {
+.menuButton {
+  position: fixed;
+  top: 40px;
+  left: 80px;
+  background: transparent;
+  color: #fff;
+  z-index: 3;
+}
+
+.menuButton i {
+  z-index: 2;
+  font-size: 5.5rem;
+}
+
+.menuButton:hover,
+.menuButton:focus {
+  color: #A8D4FF;
+  text-shadow: 0 0 3px #A8D4FF;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.menuButton:active {
+  color: #29396B;
+  text-shadow: 0 0 3px #29396B;
+}
+
+.closeButton {
   position: absolute;
+  right: 20px;
+  top: 20px;
+  background: transparent;
+  color: #fff;
+}
+
+.closeButton i {
+  font-size: 5.0rem;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+  color: #16161d;
+  text-shadow: 0 0 3px #16161d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.closeButton:active {
+  color: #fff;
+  text-shadow: 0 0 3px #fff;
+}
+
+.mainNav {
+  position: fixed;
   top: 0;
   left: -1000px;
+  width: 30%;
+  max-width: 600px;
+  border: 5px solid #16161d;
+  -webkit-box-shadow: 0 0 5px #16161d;
+          box-shadow: 0 0 5px #16161d;
+  z-index: 4;
+  text-align: center;
+  background: #29396B;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .mainNav a {
   font-size: 3.6rem;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .mainNav .navList {
@@ -388,6 +476,16 @@ header .talk {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.mainNav .navList a:hover,
+.mainNav .navList a:focus {
+  color: #29396B;
+  background: #fff;
+}
+
+.mainNav .navList a:focus {
+  padding: 0 20px;
 }
 
 @media (max-width: 1600px) {
@@ -569,6 +667,10 @@ header .talk {
   padding: 5px;
   border: 3px solid #16161d;
   border-radius: 6px;
+}
+
+.contactSection form textarea {
+  resize: none;
 }
 
 .contactSection form button {

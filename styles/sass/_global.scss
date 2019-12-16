@@ -104,6 +104,7 @@ p {
 a.highlighted {
     padding: 10px 20px;
     border-radius: 40px;
+    border: 2px solid $textMain;
 
     font-weight: 600;
     color: $backgroundMain;
@@ -114,9 +115,31 @@ a.highlighted {
     }
 }
 
+a.highlighted:hover,
+a.highlighted:focus {
+    color: $textMain;
+    background: $backgroundMain;
+}
+
 i {
     @include forDesktop {
         font-size: 3.5rem;
+        transition: all 0.2s ease-out;
+    }
+}
+
+a:hover,
+a:focus {
+    i {
+        color: $headingMain;
+        text-shadow: 0 0 3px $headingMain;
+    }
+}
+
+a:active {
+    i {
+        color: $indexBackground;
+        text-shadow: 0 0 3px $indexBackground;
     }
 }
 

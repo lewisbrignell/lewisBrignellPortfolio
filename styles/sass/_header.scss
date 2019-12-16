@@ -22,13 +22,84 @@ header {
     }
 }
 
-.mainNav {
+.menuButton {
+    position: fixed;
+    top: 40px;
+    left: 80px;
+
+    background: transparent;
+    color: $textMain;
+
+    z-index: 3;
+
+    i {
+        z-index: 2;
+        font-size: 5.5rem;
+    }
+}
+
+.menuButton:hover,
+.menuButton:focus {
+    color: $headingMain;
+    text-shadow: 0 0 3px $headingMain;
+
+    transition: all 0.3s ease-out;
+    transform: rotate(360deg);
+}
+
+.menuButton:active {
+    color: $indexBackground;
+    text-shadow: 0 0 3px $indexBackground;
+}
+
+.closeButton {
     position: absolute;
+    right: 20px;
+    top: 20px;
+
+    background: transparent;
+    color: $textMain;
+
+    i {
+        font-size: 5.0rem;
+    }
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: $backgroundMain;
+    text-shadow: 0 0 3px $backgroundMain;
+
+    transition: all 0.3s ease-out;
+    transform: rotate(180deg);
+}
+
+.closeButton:active {
+    color: $textMain;
+    text-shadow: 0 0 3px $textMain;
+}
+
+.mainNav {
+    position: fixed;
     top: 0;
     left: -1000px;
 
+    width: 30%;
+    max-width: 600px;
+    border: 5px solid $backgroundMain;
+    box-shadow: 0 0 5px $backgroundMain;
+
+    z-index: 4;
+
+    text-align: center;
+    background: $indexBackground;
+
+    transition: all 0.3s ease-out;
+
     a {
         font-size: 3.6rem;
+
+        transition: all 0.2s ease-out;
     }
 
     .navList {
@@ -38,6 +109,16 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
+        a:hover,
+        a:focus {
+            color: $indexBackground;
+            background: $textMain;
+        }
+
+        a:focus {
+            padding: 0 20px;
+        }
 
     }
 }
