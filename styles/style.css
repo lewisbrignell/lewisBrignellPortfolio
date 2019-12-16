@@ -608,13 +608,147 @@ header .talk {
   background: darkolivegreen;
 }
 
+.portfolioSection .sixty {
+  width: 75%;
+  padding-top: 40px;
+}
+
 .portfolioSection .forty {
-  -webkit-clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 48% 52%, 25% 0%);
-          clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 48% 52%, 25% 0%);
+  width: 25%;
+  padding-top: 70px;
+  -webkit-clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 5% 100%, 48% 52%, 5% 0%);
+          clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 5% 100%, 48% 52%, 5% 0%);
 }
 
 .portfolioSection .forty h2 {
   text-align: right;
+}
+
+.portfolioSection .portfolioList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  background: lavender;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+@media (max-width: 1600px) {
+  .portfolioSection .portfolioList {
+    width: 100%;
+    height: 95%;
+  }
+}
+
+.portfolioSection .portfolioItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 5px 10px;
+  border: 3px solid #000;
+}
+
+@media (max-width: 1600px) {
+  .portfolioSection .portfolioItem {
+    min-width: 850px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .portfolioSection .portfolioItem .projectPicContainer {
+    width: 78%;
+  }
+}
+
+.portfolioSection .portfolioItem h3,
+.portfolioSection .portfolioItem p,
+.portfolioSection .portfolioItem a {
+  color: #16161d;
+}
+
+.portfolioSection .portfolioItem h3 {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.portfolioSection .portfolioItem p {
+  width: 90%;
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.portfolioSection .portfolioItem a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #29396B;
+}
+
+.portfolioSection .skillUsedList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.portfolioSection .skillUsed {
+  display: inline-block;
+  margin: 5px 8px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 2.0rem;
+  font-weight: 600;
+}
+
+.htmlColor {
+  background: darkred;
+}
+
+.cssColor {
+  background: #264de4;
+}
+
+.jQueryColor {
+  background: #707070;
+}
+
+.jsColor {
+  background: yellow;
+  color: #000;
+}
+
+.sassColor {
+  background: #cd6799;
+}
+
+.gitColor {
+  background: #000;
+  color: #fff;
+}
+
+.gitHubColor {
+  background: green;
+}
+
+.reactColor {
+  background: #222222;
+  color: #53c1de;
+}
+
+.firebaseColor {
+  background: orangered;
+  color: #000;
 }
 
 .contactSection {

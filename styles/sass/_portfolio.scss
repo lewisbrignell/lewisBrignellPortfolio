@@ -4,14 +4,143 @@
     background: darkolivegreen;
 
     .sixty {
-        
+        width: 75%;
+        padding-top: 40px;
     }
 
     .forty {
-        clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 48% 52%, 25% 0%);
+        width: 25%;
+        padding-top: 70px;
+
+        clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 5% 100%, 48% 52%, 5% 0%);
 
         h2 {
             text-align: right;
         }
     }
+
+    .portfolioList {
+        display: flex;
+
+        @include forDesktop {
+            width: 100%;
+            height: 95%;
+        }
+        border-radius: 10px;
+
+        background: lavender;
+
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+
+    .portfolioItem {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @include forDesktop {
+            min-width: 850px;
+        }
+
+        margin: 5px 10px;
+        border: 3px solid #000;
+
+        .projectPicContainer {
+            @include forDesktop {
+                width: 78%;
+            }
+        }
+
+        h3,
+        p,
+        a {
+            color: $backgroundMain;
+        }
+
+        h3 {
+            padding: 10px;
+
+            font-weight: 600;
+        }
+
+        p {
+            width: 90%;
+            margin: 0;
+
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+
+            padding: 10px;
+
+            text-decoration: underline;
+            font-weight: 600;
+
+            color: $indexBackground;
+            
+        }
+    }
+
+    .skillUsedList {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        text-align: center;
+    }
+
+    .skillUsed {
+        display: inline-block;
+
+        margin: 5px 8px;
+        padding: 5px 10px;
+        border-radius: 10px;
+
+        font-size: 2.0rem;
+        font-weight: 600;
+    }
+}
+    
+.htmlColor {
+    background: darkred;
+}
+
+.cssColor {
+    background: rgb(38, 77,	228);
+}
+
+.jQueryColor {
+    background: rgb(112, 112, 112);
+}
+
+.jsColor {
+    background: yellow;
+    color: #000;
+}
+
+.sassColor {
+    background: rgb(205, 103, 153);
+}
+
+.gitColor {
+    background: #000;
+    color: #fff;
+}
+
+.gitHubColor {
+    background: green;
+}
+
+.reactColor {
+    background: rgb(34, 34, 34);
+    color: rgb(83, 193, 222);
+}
+
+.firebaseColor {
+    background: orangered;
+    color: #000;
 }
