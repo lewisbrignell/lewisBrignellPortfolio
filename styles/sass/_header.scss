@@ -3,6 +3,16 @@
 header {
     position: relative;
 
+    .forty {
+        padding: 0;
+        background: linear-gradient(#4d5e6e, $backgroundMain);
+        
+        img {
+            height: 100%;
+            
+        }
+    }
+
     .sixty {
         @include forDesktop {
             padding-top: 200px;
@@ -19,6 +29,8 @@ header {
         position: absolute;
         top: 40px;
         right: 100px;
+
+        transition: all 0.2s ease-out;
     }
 }
 
@@ -35,6 +47,7 @@ header {
     i {
         z-index: 2;
         font-size: 5.5rem;
+        text-shadow: 1px 1px 1px #005;
     }
 }
 
@@ -44,7 +57,7 @@ header {
     text-shadow: 0 0 3px $headingMain;
 
     transition: all 0.3s ease-out;
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 
 .menuButton:active {
@@ -96,9 +109,8 @@ header {
 
     transition: all 0.3s ease-out;
 
-    a {
+    a {        
         font-size: 3.6rem;
-
         transition: all 0.2s ease-out;
     }
 
@@ -141,6 +153,7 @@ header {
 
         .socialLink a {
             padding: 20px;
+            transition: all 0.2s ease-out;
         }
 
         .socialLink a.highlighted {

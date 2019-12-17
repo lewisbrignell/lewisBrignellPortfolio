@@ -164,7 +164,10 @@ section {
     @include forDesktop {
         min-height: 90vh;
     }
-    
+}
+
+section,
+.forty {
     background: $backgroundMain;
 }
 
@@ -176,7 +179,6 @@ section {
     @include forDesktop {
         width: 40%;
     }
-    background: $backgroundMain;
 }
 
 .sixty {

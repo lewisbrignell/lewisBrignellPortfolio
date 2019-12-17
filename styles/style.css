@@ -323,11 +323,6 @@ a {
   line-height: 1.2;
 }
 
-header,
-section {
-  background: #16161d;
-}
-
 @media (max-width: 1600px) {
   header,
   section {
@@ -335,14 +330,15 @@ section {
   }
 }
 
+section,
+.forty {
+  background: #16161d;
+}
+
 .flexParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.forty {
-  background: #16161d;
 }
 
 @media (max-width: 1600px) {
@@ -368,6 +364,16 @@ header {
   position: relative;
 }
 
+header .forty {
+  padding: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4d5e6e), to(#16161d));
+  background: linear-gradient(#4d5e6e, #16161d);
+}
+
+header .forty img {
+  height: 100%;
+}
+
 @media (max-width: 1600px) {
   header .sixty {
     padding-top: 200px;
@@ -384,6 +390,8 @@ header .talk {
   position: absolute;
   top: 40px;
   right: 100px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .menuButton {
@@ -398,6 +406,7 @@ header .talk {
 .menuButton i {
   z-index: 2;
   font-size: 5.5rem;
+  text-shadow: 1px 1px 1px #005;
 }
 
 .menuButton:hover,
@@ -406,8 +415,8 @@ header .talk {
   text-shadow: 0 0 3px #A8D4FF;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .menuButton:active {
@@ -514,6 +523,8 @@ header .talk {
 
 .socialMediaNav .socialList .socialLink a {
   padding: 20px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .socialMediaNav .socialList .socialLink a.highlighted {
@@ -522,7 +533,7 @@ header .talk {
 }
 
 .aboutSection {
-  background: darkslateblue;
+  background: #352d68;
 }
 
 .aboutSection .sixty p:nth-of-type(1) {
@@ -552,7 +563,7 @@ header .talk {
 }
 
 .skillsSection {
-  background: darkred;
+  background: #750000;
 }
 
 .skillsSection .sixty {
@@ -605,7 +616,7 @@ header .talk {
 }
 
 .portfolioSection {
-  background: darkolivegreen;
+  background: #e9e9f7;
 }
 
 .portfolioSection .sixty {
@@ -616,8 +627,6 @@ header .talk {
 .portfolioSection .forty {
   width: 25%;
   padding-top: 70px;
-  -webkit-clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 5% 100%, 48% 52%, 5% 0%);
-          clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 5% 100%, 48% 52%, 5% 0%);
 }
 
 .portfolioSection .forty h2 {
@@ -629,7 +638,6 @@ header .talk {
   display: -ms-flexbox;
   display: flex;
   border-radius: 10px;
-  background: #fff;
   overflow: scroll;
   overflow-y: hidden;
 }
@@ -637,7 +645,7 @@ header .talk {
 @media (max-width: 1600px) {
   .portfolioSection .portfolioList {
     width: 100%;
-    height: 95%;
+    height: 98%;
   }
 }
 
@@ -649,7 +657,7 @@ header .talk {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 5px 10px;
+  margin: 8px 20px;
   border: 3px solid #29396B;
   border-radius: 5px;
 }
@@ -767,7 +775,7 @@ header .talk {
 }
 
 .contactSection {
-  background: lavender;
+  background: #A8D4FF;
 }
 
 .contactSection .forty {
