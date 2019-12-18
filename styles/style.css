@@ -418,6 +418,13 @@ header .forty img {
   }
 }
 
+@media (max-width: 599px) {
+  header .sixty {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 header h2 {
   margin-top: 10px;
   font-size: 4.0rem;
@@ -575,7 +582,7 @@ header .talk {
 
 @media (max-width: 1024px) {
   .socialMediaNav {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
 
@@ -601,6 +608,13 @@ header .talk {
 
 .socialMediaNav .socialList .socialLink {
   margin-top: 40px;
+}
+
+@media (max-width: 599px) {
+  .socialMediaNav .socialList .socialLink {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .socialMediaNav .socialList .socialLink a {
@@ -1029,6 +1043,12 @@ header .talk {
     padding-right: 15px;
     width: 100%;
     min-height: 75vh;
+  }
+}
+
+@media (max-width: 599px) {
+  .contactSection .forty {
+    min-height: 110vh;
   }
 }
 

@@ -26,6 +26,11 @@ header {
             padding-top: 130px;
         } 
 
+        @include forPhone {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
     }
 
     h2 {
@@ -172,7 +177,7 @@ header {
     }
     
     @include forTablet {
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .socialList {
@@ -189,6 +194,11 @@ header {
 
         .socialLink {
             margin-top: 40px;
+
+            @include forPhone {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
         }
 
         .socialLink a {
