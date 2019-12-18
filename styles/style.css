@@ -981,6 +981,13 @@ header .talk {
   background: #A8D4FF;
 }
 
+@media (max-width: 1024px) {
+  .contactSection .flexParent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .contactSection .forty {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 100%, 40% 75%, 0% 75%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 100%, 40% 75%, 0% 75%);
@@ -1006,11 +1013,25 @@ header .talk {
 @media (max-width: 1024px) {
   .contactSection .forty {
     padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    min-height: 75vh;
   }
 }
 
 .contactSection .sixty {
   padding-top: 60px;
+}
+
+@media (max-width: 1024px) {
+  .contactSection .sixty {
+    width: 100%;
+    min-height: 70vh;
+    padding-top: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 .contactSection form {
@@ -1024,6 +1045,12 @@ header .talk {
   padding: 20px 40px;
   color: #16161d;
   background: transparent;
+}
+
+@media (max-width: 1024px) {
+  .contactSection form {
+    padding-top: 0;
+  }
 }
 
 .contactSection form label {
