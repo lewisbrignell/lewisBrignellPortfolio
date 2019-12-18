@@ -521,8 +521,20 @@ header .talk {
   z-index: 4;
   text-align: center;
   background: #29396B;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+@media (max-width: 1024px) {
+  .mainNav {
+    width: 40%;
+  }
+}
+
+@media (max-width: 599px) {
+  .mainNav {
+    width: 90%;
+  }
 }
 
 .mainNav a {

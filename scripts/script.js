@@ -10,5 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
     closeButton.onclick = () => {
         mainNav.style.left = '-1000px';
     }
+
+    this.onclick = (event) => {
+        if (event.explicitOriginalTarget.className === "navAnchor" ) {
+            mainNav.style.left = '-1000px';
+        }
+    }
 });
 

@@ -130,7 +130,15 @@ header {
     text-align: center;
     background: $indexBackground;
 
-    transition: all 0.3s ease-out;
+    transition: all 0.5s ease-out;
+
+    @include forTablet {
+        width: 40%;
+    }
+
+    @include forPhone {
+        width: 90%;
+    }
 
     a {        
         font-size: 3.6rem;
