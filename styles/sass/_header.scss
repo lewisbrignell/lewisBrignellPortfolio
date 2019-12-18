@@ -9,14 +9,23 @@ header {
         
         img {
             height: 100%;
-            
+        }
+
+        @include forTablet {
+            display: none;
         }
     }
 
     .sixty {
         @include forDesktop {
             padding-top: 200px;
-        }   
+        }  
+        
+        @include forTablet {
+            width: 100%;
+            padding-top: 130px;
+        } 
+
     }
 
     h2 {
@@ -31,6 +40,11 @@ header {
         right: 100px;
 
         transition: all 0.2s ease-out;
+
+        @include forTablet {
+            top: 30px;
+            right: 20px; 
+        }
     }
 }
 
@@ -48,6 +62,15 @@ header {
         z-index: 2;
         font-size: 5.5rem;
         text-shadow: 1px 1px 1px #005;
+
+        @include forPhone {
+            font-size: 4.0rem;
+        }
+    }
+
+    @include forTablet {
+        top: 30px;
+        left: 20px; 
     }
 }
 
@@ -140,6 +163,9 @@ header {
         margin-top: 150px;
     }
     
+    @include forTablet {
+        margin-top: 0;
+    }
 
     .socialList {
         display: flex;
@@ -147,18 +173,36 @@ header {
         justify-content: left;
         align-items: center;
 
+        @include forTablet {
+            :first-child {
+                width: 100%;
+            }
+        }
+
         .socialLink {
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         .socialLink a {
             padding: 20px;
             transition: all 0.2s ease-out;
+
+            @include forTablet {
+                padding-right: 50px;
+            }
+
+            @include forPhone {
+                padding: 15px 15px;
+            }
         }
 
         .socialLink a.highlighted {
             padding: 5px 15px;
             margin-right: 10px;
+
+            @include forPhone {
+                margin-right: 0;
+            }
         }
 
     }

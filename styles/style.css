@@ -185,6 +185,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 99.5%;
+    max-width: 1024px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -239,10 +246,22 @@ p {
   }
 }
 
+@media (max-width: 599px) {
+  h1 {
+    font-size: 6.0rem;
+  }
+}
+
 @media (max-width: 1600px) {
   h2 {
     margin-bottom: 10px;
     font-size: 5.0rem;
+  }
+}
+
+@media (max-width: 599px) {
+  h2 {
+    font-size: 4.0rem;
   }
 }
 
@@ -279,6 +298,12 @@ a.highlighted {
 @media (max-width: 1600px) {
   a.highlighted {
     font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 599px) {
+  a.highlighted {
+    font-size: 2.0rem;
   }
 }
 
@@ -355,7 +380,7 @@ section,
 
 .forty,
 .sixty {
-  height: 100vh;
+  min-height: 90vh;
   padding: 0 40px;
   padding-top: 140px;
 }
@@ -374,9 +399,22 @@ header .forty img {
   height: 100%;
 }
 
+@media (max-width: 1024px) {
+  header .forty {
+    display: none;
+  }
+}
+
 @media (max-width: 1600px) {
   header .sixty {
     padding-top: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header .sixty {
+    width: 100%;
+    padding-top: 130px;
   }
 }
 
@@ -394,6 +432,13 @@ header .talk {
   transition: all 0.2s ease-out;
 }
 
+@media (max-width: 1024px) {
+  header .talk {
+    top: 30px;
+    right: 20px;
+  }
+}
+
 .menuButton {
   position: fixed;
   top: 40px;
@@ -407,6 +452,19 @@ header .talk {
   z-index: 2;
   font-size: 5.5rem;
   text-shadow: 1px 1px 1px #005;
+}
+
+@media (max-width: 599px) {
+  .menuButton i {
+    font-size: 4.0rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menuButton {
+    top: 30px;
+    left: 20px;
+  }
 }
 
 .menuButton:hover,
@@ -503,6 +561,12 @@ header .talk {
   }
 }
 
+@media (max-width: 1024px) {
+  .socialMediaNav {
+    margin-top: 0;
+  }
+}
+
 .socialMediaNav .socialList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,8 +581,14 @@ header .talk {
           align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .socialMediaNav .socialList :first-child {
+    width: 100%;
+  }
+}
+
 .socialMediaNav .socialList .socialLink {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .socialMediaNav .socialList .socialLink a {
@@ -527,9 +597,27 @@ header .talk {
   transition: all 0.2s ease-out;
 }
 
+@media (max-width: 1024px) {
+  .socialMediaNav .socialList .socialLink a {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 599px) {
+  .socialMediaNav .socialList .socialLink a {
+    padding: 15px 15px;
+  }
+}
+
 .socialMediaNav .socialList .socialLink a.highlighted {
   padding: 5px 15px;
   margin-right: 10px;
+}
+
+@media (max-width: 599px) {
+  .socialMediaNav .socialList .socialLink a.highlighted {
+    margin-right: 0;
+  }
 }
 
 .aboutSection {
@@ -538,6 +626,19 @@ header .talk {
 
 .aboutSection .sixty p:nth-of-type(1) {
   margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .aboutSection .sixty {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .aboutSection .sixty {
+    width: 100%;
+  }
 }
 
 .aboutSection .forty {
@@ -555,6 +656,19 @@ header .talk {
           align-items: center;
 }
 
+@media (max-width: 1024px) {
+  .aboutSection .forty {
+    -webkit-clip-path: inset(18.5% 0 18.5% 0);
+            clip-path: inset(18.5% 0 18.5% 0);
+  }
+}
+
+@media (max-width: 599px) {
+  .aboutSection .forty {
+    display: none;
+  }
+}
+
 @media (max-width: 1600px) {
   .aboutSection .profilePicContainer {
     width: 95%;
@@ -563,7 +677,16 @@ header .talk {
 }
 
 .skillsSection {
-  background: #750000;
+  background: #16161d;
+}
+
+@media (max-width: 599px) {
+  .skillsSection .flexParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .skillsSection .sixty {
@@ -577,6 +700,13 @@ header .talk {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #750000;
+}
+
+@media (max-width: 599px) {
+  .skillsSection .sixty {
+    width: 100%;
+  }
 }
 
 .skillsSection .forty {
@@ -589,6 +719,25 @@ header .talk {
   font-size: 2.5rem;
 }
 
+@media (max-width: 1024px) {
+  .skillsSection .forty {
+    padding-bottom: 20px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@media (max-width: 599px) {
+  .skillsSection .forty {
+    padding-top: 40px;
+    width: 100%;
+    min-height: 10vh;
+  }
+  .skillsSection .forty ul {
+    display: none;
+  }
+}
+
 .skillsSection .skillsList {
   display: -ms-grid;
   display: grid;
@@ -596,6 +745,15 @@ header .talk {
       grid-template-rows: 1fr 1fr 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  .skillsSection .skillsList {
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .skillsSection .skillItem {
@@ -608,6 +766,12 @@ header .talk {
   }
 }
 
+@media (max-width: 1024px) {
+  .skillsSection i {
+    font-size: 8.0rem;
+  }
+}
+
 @media (max-width: 1600px) {
   .skillsSection .skillItem img {
     max-width: 120px;
@@ -616,12 +780,29 @@ header .talk {
 }
 
 .portfolioSection {
-  background: #e9e9f7;
+  background: #16161d;
+}
+
+@media (max-width: 1024px) {
+  .portfolioSection .flexParent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .portfolioSection .sixty {
   width: 75%;
   padding-top: 40px;
+  background: #e9e9f7;
+}
+
+@media (max-width: 1024px) {
+  .portfolioSection .sixty {
+    width: 100%;
+    padding: 20px 5px;
+  }
 }
 
 .portfolioSection .forty {
@@ -631,6 +812,20 @@ header .talk {
 
 .portfolioSection .forty h2 {
   text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .portfolioSection .forty {
+    width: 100%;
+    padding-top: 30px;
+    min-height: 10vh;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .portfolioSection .forty h2 {
+    text-align: center;
+  }
 }
 
 .portfolioSection .portfolioList {
@@ -665,6 +860,12 @@ header .talk {
 @media (max-width: 1600px) {
   .portfolioSection .portfolioItem {
     min-width: 850px;
+  }
+}
+
+@media (max-width: 599px) {
+  .portfolioSection .portfolioItem {
+    min-width: 400px;
   }
 }
 
@@ -718,6 +919,8 @@ header .talk {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -798,6 +1001,12 @@ header .talk {
 .contactSection .forty a {
   display: inline-block;
   margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .contactSection .forty {
+    padding-top: 20px;
+  }
 }
 
 .contactSection .sixty {

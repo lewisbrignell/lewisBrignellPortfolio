@@ -1,7 +1,13 @@
 // styles for skill set section within main
 
 .skillsSection {
-    background: #750000;
+    background: $backgroundMain;
+
+    .flexParent {
+        @include forPhone {
+            flex-direction: column;
+        }
+    }
 
     .sixty {
         padding-top: 0;
@@ -9,6 +15,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        background: #750000;
+
+        @include forPhone {
+            width: 100%;
+        }
     }
 
     .forty {
@@ -19,12 +31,32 @@
             font-size: 2.5rem;
         }
 
+        @include forTablet {
+            padding-bottom: 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        @include forPhone {
+            padding-top: 40px;
+            width: 100%;
+            min-height: 10vh;
+
+            ul {
+                display: none;
+            }
+        }
+
     }
 
     .skillsList {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+
+        @include forTablet {
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     .skillItem {
@@ -34,6 +66,10 @@
     i {
         @include forDesktop {
             font-size: 12.0rem;
+        }
+
+        @include forTablet {
+            font-size: 8.0rem;
         }
         
     }
