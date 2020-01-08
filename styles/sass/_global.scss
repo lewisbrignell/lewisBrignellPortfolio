@@ -178,7 +178,7 @@ a {
 header,
 section {
     @include forDesktop {
-        min-height: 90vh;
+        min-height: $desktopHeight;
     }
 }
 
@@ -205,7 +205,7 @@ section,
 
 .forty,
 .sixty {
-    min-height: 90vh;
+    min-height: $desktopHeight;
     padding: 0 40px;
     padding-top: 140px;
 }

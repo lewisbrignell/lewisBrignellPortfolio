@@ -1,7 +1,7 @@
 // styles for skill set section within main
 
 .skillsSection {
-    background: $backgroundMain;
+    background: $indexBackground;
 
     .flexParent {
         @include forPhone {
@@ -16,7 +16,7 @@
         justify-content: center;
         align-items: center;
 
-        background: #750000;
+        background: $indexBackground;
 
         @include forPhone {
             width: 100%;
@@ -24,7 +24,7 @@
     }
 
     .forty {
-        clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 
         p {
             color: $headingMain;

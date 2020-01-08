@@ -351,7 +351,7 @@ a {
 @media (max-width: 1600px) {
   header,
   section {
-    min-height: 90vh;
+    min-height: 762px;
   }
 }
 
@@ -380,7 +380,7 @@ section,
 
 .forty,
 .sixty {
-  min-height: 90vh;
+  min-height: 762px;
   padding: 0 40px;
   padding-top: 140px;
 }
@@ -703,7 +703,7 @@ header .talk {
 }
 
 .skillsSection {
-  background: #16161d;
+  background: #29396B;
 }
 
 @media (max-width: 599px) {
@@ -726,7 +726,7 @@ header .talk {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #750000;
+  background: #29396B;
 }
 
 @media (max-width: 599px) {
@@ -736,8 +736,8 @@ header .talk {
 }
 
 .skillsSection .forty {
-  -webkit-clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 65% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 }
 
 .skillsSection .forty p {
@@ -1004,7 +1004,7 @@ header .talk {
 }
 
 .contactSection {
-  background: #A8D4FF;
+  background: #352d68;
 }
 
 @media (max-width: 1024px) {
@@ -1075,7 +1075,8 @@ header .talk {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px 40px;
-  color: #16161d;
+  color: #fff;
+  text-shadow: 1px 1px 2px #16161d;
   background: transparent;
 }
 

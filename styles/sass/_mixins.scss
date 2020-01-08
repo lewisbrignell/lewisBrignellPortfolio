@@ -8,6 +8,8 @@ $indexBackground: #29396B;
 $headingMain: #A8D4FF;
 
 
+$desktopHeight: 762px;
+
 // media query mixins
 @mixin forDesktop {
   @media (max-width: 1600px) { @content; }
