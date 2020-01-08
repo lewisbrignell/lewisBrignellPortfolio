@@ -57,13 +57,16 @@ header {
     position: fixed;
     top: 40px;
     left: 80px;
+    border-radius: 4px;
 
-    background: transparent;
+    background: $indexBackground;
     color: $textMain;
 
     z-index: 3;
 
     i {
+        margin: 4px;
+        
         z-index: 2;
         font-size: 5.5rem;
         text-shadow: 1px 1px 1px #005;

@@ -18,15 +18,15 @@
 
         p {
             font-weight: 600;
+            display: block;
+        }
+
+        p:nth-of-type(1) {
+            margin-top: 60px;
         }
 
         p:nth-of-type(3) {
             margin-bottom: 20px;
-        }
-
-        a {
-            display: inline-block;
-            margin-top: 20px;
         }
 
         @include forTablet {
@@ -52,6 +52,30 @@
             padding-left: 5px;
             padding-right: 5px;
         }
+    }
+
+    a {
+        margin-top: 120px;
+        margin-left: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        display: inline-block;
+
+        font-size: 4.0rem;
+        font-weight: 600;
+        text-shadow: 2px 2px 1px #000;
+
+        
+    }
+
+    a:hover,
+    a:focus {
+        background: $backgroundMain;
+    }
+
+    a:active {
+        background: $headingMain;
     }
 
     form {
