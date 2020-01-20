@@ -64,20 +64,15 @@
     }
 
     i {
-        @include forDesktop {
-            font-size: 12.0rem;
-        }
+        font-size: 12.0rem;
 
         @include forTablet {
             font-size: 8.0rem;
         }
-        
     }
 
     .skillItem img {
-        @include forDesktop {
-            max-width: 120px;
-            max-height: 121px;
-        }
+        max-width: 120px;
+        max-height: 121px;
     }
 }

@@ -71,9 +71,8 @@ p {
 }
 
 h1 {
-    @include forDesktop {
-        font-size: 8.0rem;
-    }
+    font-size: 8.0rem;
+    
 
     @include forPhone {
         font-size: 6.0rem;
@@ -81,10 +80,9 @@ h1 {
 }
 
 h2 {
-    @include forDesktop {
-        margin-bottom: 10px;
-        font-size: 5.0rem;
-    }
+    margin-bottom: 10px;
+    font-size: 5.0rem;
+
 
     @include forPhone {
         font-size: 4.0rem;
@@ -92,18 +90,14 @@ h2 {
 }
 
 h3 {
-    @include forDesktop {
-        font-size: 3.6rem;
-    }
+    font-size: 3.6rem;
 }
 
 a,
 p,
 input,
 textarea {
-    @include forDesktop {
-        font-size: 2.2rem;
-    }
+    font-size: 2.2rem;
 }
 
 p {
@@ -122,9 +116,8 @@ a.highlighted {
     color: $backgroundMain;
     background: $textMain;
 
-    @include forDesktop {
-        font-size: 2.4rem;
-    }
+    font-size: 2.4rem;
+    
 
     @include forPhone {
         font-size: 2.0rem;
@@ -138,10 +131,10 @@ a.highlighted:focus {
 }
 
 i {
-    @include forDesktop {
+    // @include forDesktop {
         font-size: 3.5rem;
         transition: all 0.2s ease-out;
-    }
+    // }
 }
 
 a:hover,
@@ -177,9 +170,7 @@ a {
 
 header,
 section {
-    @include forDesktop {
-        min-height: $desktopHeight;
-    }
+    min-height: $desktopHeight;
 }
 
 section,
@@ -192,15 +183,12 @@ section,
 }
 
 .forty {
-    @include forDesktop {
-        width: 40%;
-    }
+    max-width: 40%;
 }
 
 .sixty {
-    @include forDesktop {
-        width: 60%;
-    }
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 .forty,

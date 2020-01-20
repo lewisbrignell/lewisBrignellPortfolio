@@ -240,10 +240,8 @@ p {
   font-weight: 300;
 }
 
-@media (max-width: 1600px) {
-  h1 {
-    font-size: 8.0rem;
-  }
+h1 {
+  font-size: 8.0rem;
 }
 
 @media (max-width: 599px) {
@@ -252,11 +250,9 @@ p {
   }
 }
 
-@media (max-width: 1600px) {
-  h2 {
-    margin-bottom: 10px;
-    font-size: 5.0rem;
-  }
+h2 {
+  margin-bottom: 10px;
+  font-size: 5.0rem;
 }
 
 @media (max-width: 599px) {
@@ -265,19 +261,15 @@ p {
   }
 }
 
-@media (max-width: 1600px) {
-  h3 {
-    font-size: 3.6rem;
-  }
+h3 {
+  font-size: 3.6rem;
 }
 
-@media (max-width: 1600px) {
-  a,
-  p,
-  input,
-  textarea {
-    font-size: 2.2rem;
-  }
+a,
+p,
+input,
+textarea {
+  font-size: 2.2rem;
 }
 
 p {
@@ -293,12 +285,7 @@ a.highlighted {
   font-weight: 600;
   color: #16161d;
   background: #fff;
-}
-
-@media (max-width: 1600px) {
-  a.highlighted {
-    font-size: 2.4rem;
-  }
+  font-size: 2.4rem;
 }
 
 @media (max-width: 599px) {
@@ -313,12 +300,10 @@ a.highlighted:focus {
   background: #16161d;
 }
 
-@media (max-width: 1600px) {
-  i {
-    font-size: 3.5rem;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
+i {
+  font-size: 3.5rem;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 a:hover i,
@@ -348,11 +333,9 @@ a {
   line-height: 1.2;
 }
 
-@media (max-width: 1600px) {
-  header,
-  section {
-    min-height: 762px;
-  }
+header,
+section {
+  min-height: 762px;
 }
 
 section,
@@ -366,16 +349,13 @@ section,
   display: flex;
 }
 
-@media (max-width: 1600px) {
-  .forty {
-    width: 40%;
-  }
+.forty {
+  max-width: 40%;
 }
 
-@media (max-width: 1600px) {
-  .sixty {
-    width: 60%;
-  }
+.sixty {
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .forty,
@@ -390,6 +370,7 @@ header {
 }
 
 header .forty {
+  max-width: 40%;
   padding: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#4d5e6e), to(#16161d));
   background: linear-gradient(#4d5e6e, #16161d);
@@ -405,24 +386,18 @@ header .forty img {
   }
 }
 
-@media (max-width: 1600px) {
-  header .sixty {
-    padding-top: 200px;
-  }
-}
-
-@media (max-width: 1024px) {
-  header .sixty {
-    width: 100%;
-    padding-top: 130px;
-  }
-}
-
-@media (max-width: 599px) {
-  header .sixty {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+header .sixty {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header h2 {
@@ -576,7 +551,7 @@ header .talk {
   padding: 0 20px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1480px) {
   .socialMediaNav {
     margin-top: 150px;
   }
@@ -697,7 +672,7 @@ header .talk {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1480px) {
   .aboutSection .profilePicContainer {
     width: 95%;
     max-width: 500px;
@@ -788,10 +763,8 @@ header .talk {
   margin: 40px;
 }
 
-@media (max-width: 1600px) {
-  .skillsSection i {
-    font-size: 12.0rem;
-  }
+.skillsSection i {
+  font-size: 12.0rem;
 }
 
 @media (max-width: 1024px) {
@@ -800,29 +773,32 @@ header .talk {
   }
 }
 
-@media (max-width: 1600px) {
-  .skillsSection .skillItem img {
-    max-width: 120px;
-    max-height: 121px;
-  }
+.skillsSection .skillItem img {
+  max-width: 120px;
+  max-height: 121px;
 }
 
 .portfolioSection {
   background: #16161d;
+  padding-bottom: 20px;
 }
 
-@media (max-width: 1024px) {
-  .portfolioSection .flexParent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.portfolioSection .flexParent {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .portfolioSection .sixty {
-  width: 75%;
-  padding-top: 40px;
+  width: 100%;
+  max-width: 100%;
+  padding-top: 20px;
+  margin-left: 0;
+  margin-right: 0;
   background: #e9e9f7;
 }
 
@@ -834,26 +810,16 @@ header .talk {
 }
 
 .portfolioSection .forty {
-  width: 25%;
-  padding-top: 70px;
+  width: 100%;
+  max-width: 100%;
+  padding: 30px 0;
+  min-height: 60px;
 }
 
 .portfolioSection .forty h2 {
-  text-align: right;
-}
-
-@media (max-width: 1024px) {
-  .portfolioSection .forty {
-    width: 100%;
-    padding-top: 30px;
-    min-height: 10vh;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-  .portfolioSection .forty h2 {
-    text-align: center;
-  }
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .portfolioSection .portfolioList {
@@ -865,7 +831,7 @@ header .talk {
   overflow-y: hidden;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1480px) {
   .portfolioSection .portfolioList {
     width: 100%;
     height: 98%;
@@ -880,15 +846,10 @@ header .talk {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  min-width: 850px;
   margin: 8px 20px;
   border: 3px solid #29396B;
   border-radius: 5px;
-}
-
-@media (max-width: 1600px) {
-  .portfolioSection .portfolioItem {
-    min-width: 850px;
-  }
 }
 
 @media (max-width: 599px) {
@@ -897,7 +858,7 @@ header .talk {
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1480px) {
   .portfolioSection .portfolioItem .projectPicContainer {
     width: 78%;
   }

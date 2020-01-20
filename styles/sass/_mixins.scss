@@ -12,7 +12,7 @@ $desktopHeight: 762px;
 
 // media query mixins
 @mixin forDesktop {
-  @media (max-width: 1600px) { @content; }
+  @media (max-width: 1480px) { @content; }
 }
 
 @mixin forTablet {
