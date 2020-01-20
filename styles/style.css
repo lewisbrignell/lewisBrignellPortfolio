@@ -400,6 +400,21 @@ header .sixty {
           justify-content: center;
 }
 
+@media (max-width: 1024px) {
+  header .sixty {
+    max-width: 100%;
+    padding-top: 130px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 599px) {
+  header .sixty {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 header h2 {
   margin-top: 10px;
   font-size: 4.0rem;
@@ -551,10 +566,8 @@ header .talk {
   padding: 0 20px;
 }
 
-@media (max-width: 1480px) {
-  .socialMediaNav {
-    margin-top: 150px;
-  }
+.socialMediaNav {
+  margin-top: 150px;
 }
 
 @media (max-width: 1024px) {
@@ -578,13 +591,18 @@ header .talk {
 }
 
 @media (max-width: 1024px) {
+  .socialMediaNav .socialList {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .socialMediaNav .socialList :first-child {
     width: 100%;
   }
 }
 
 .socialMediaNav .socialList .socialLink {
-  margin-top: 40px;
+  margin: 40px 20px 20px;
 }
 
 @media (max-width: 599px) {
@@ -595,15 +613,9 @@ header .talk {
 }
 
 .socialMediaNav .socialList .socialLink a {
-  padding: 20px;
+  padding: 10px;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-}
-
-@media (max-width: 1024px) {
-  .socialMediaNav .socialList .socialLink a {
-    padding-right: 50px;
-  }
 }
 
 @media (max-width: 599px) {
@@ -852,6 +864,12 @@ header .talk {
   border-radius: 5px;
 }
 
+@media (max-width: 1024px) {
+  .portfolioSection .portfolioItem {
+    min-width: 750px;
+  }
+}
+
 @media (max-width: 599px) {
   .portfolioSection .portfolioItem {
     min-width: 400px;
@@ -1038,6 +1056,12 @@ header .talk {
   font-size: 4.0rem;
   font-weight: 600;
   text-shadow: 2px 2px 1px #000;
+}
+
+@media (max-width: 1024px) {
+  .contactSection a {
+    font-size: 2.6rem;
+  }
 }
 
 .contactSection a:hover,
