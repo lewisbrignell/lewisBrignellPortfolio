@@ -1,20 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let menuButton = document.querySelector('#showMenu');
-    let closeButton = document.querySelector('#hideMenu');
-    let mainNav = document.querySelector('#mainNav');
+let menuButton = document.querySelector('#showMenu');
+let closeButton = document.querySelector('#hideMenu');
+let mainNav = document.querySelector('#mainNav');
+let navAnchor = document.querySelector('.navAnchor');
 
-    menuButton.onclick = () => {
-        mainNav.style.left = 0;
-    }
 
-    closeButton.onclick = () => {
-        mainNav.style.left = '-1000px';
-    }
+menuButton.onclick = () => {
+    mainNav.style.left = 0;
+    document.querySelector('body').style.overflow = 'hidden';
+}
 
-    this.onclick = (event) => {
-        if (event.explicitOriginalTarget.className === "navAnchor" ) {
-            mainNav.style.left = '-1000px';
-        }
+hideMenu = () => {
+    mainNav.style.left = '-1000px';
+    document.querySelector('body').style.overflow = 'scroll';
+}
+
+closeButton.onclick = () => {
+    hideMenu();
+}
+
+mainNav.addEventListener("click", function () {
+    if (event.target.className === "navAnchor") {
+        hideMenu();
     }
 });
-
