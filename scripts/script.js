@@ -6,12 +6,12 @@ let navAnchor = document.querySelector('.navAnchor');
 
 menuButton.onclick = () => {
     mainNav.style.left = 0;
-    document.querySelector('body').style.overflow = 'hidden';
+    document.querySelector('body').style.overflowY = 'hidden';
 }
 
 hideMenu = () => {
     mainNav.style.left = '-1000px';
-    document.querySelector('body').style.overflow = 'scroll';
+    document.querySelector('body').style.overflowY = 'scroll';
 }
 
 closeButton.onclick = () => {

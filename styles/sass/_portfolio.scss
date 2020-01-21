@@ -12,14 +12,14 @@
     .sixty {
         width: 100%;
         max-width: 100%;
-        padding-top: 20px;
+        padding: 10px 20px;
         margin-left: 0;
         margin-right: 0;
 
         background: rgb(233, 233, 247);
 
         @include forTablet {
-            width: 100%;
+            width: 96%;
             padding: 20px 5px;
         }
     }
@@ -42,8 +42,7 @@
         display: flex;
 
         @include forDesktop {
-            width: 100%;
-            height: 98%;
+            width: 98%;
         }
         border-radius: 10px;
 
@@ -56,6 +55,8 @@
         flex-wrap: wrap;
         justify-content: space-around;
 
+        box-shadow: 1px 1px 5px #000;
+
         min-width: 850px;
 
         @include forTablet {
@@ -63,7 +64,7 @@
         }
 
         @include forPhone {
-            min-width: 400px;
+            min-width: 320px;
         }
 
         margin: 8px 20px;
@@ -72,7 +73,7 @@
 
         .projectPicContainer {
             @include forDesktop {
-                width: 78%;
+                width: 80%;
             }
 
             img {
@@ -119,6 +120,14 @@
         a:active {
             color: #000;
         }
+    }
+
+    .portfolioItem:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+    .portfolioItem:nth-of-type(4) {
+        margin-right: 5px;
     }
 
     .skillUsedList {
