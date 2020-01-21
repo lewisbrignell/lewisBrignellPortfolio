@@ -28,10 +28,6 @@
         align-items: center;
 
         @include forTablet {
-            clip-path: inset(18.5% 0 18.5% 0);
-        }
-
-        @include forPhone {
             display: none;
         }
 

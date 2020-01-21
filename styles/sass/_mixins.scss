@@ -16,7 +16,7 @@ $desktopHeight: 762px;
 }
 
 @mixin forTablet {
-  @media (max-width: 1024px) { @content; }
+  @media (max-width: 800px) { @content; }
 }
 
 @mixin forPhone {

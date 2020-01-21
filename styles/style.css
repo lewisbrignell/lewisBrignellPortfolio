@@ -185,7 +185,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin: 0 auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .wrapper {
     width: 99.5%;
     max-width: 1024px;
@@ -339,7 +339,7 @@ section {
   min-height: 762px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   header,
   section {
     min-height: 150px;
@@ -373,7 +373,7 @@ section,
   padding-top: 140px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .forty,
   .sixty {
     max-width: 100%;
@@ -396,7 +396,7 @@ header .forty img {
   height: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   header .forty {
     display: none;
   }
@@ -416,7 +416,7 @@ header .sixty {
           justify-content: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   header .sixty {
     max-width: 100%;
     padding-top: 130px;
@@ -445,7 +445,7 @@ header .talk {
   transition: all 0.2s ease-out;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   header .talk {
     top: 30px;
     right: 20px;
@@ -476,7 +476,7 @@ header .talk {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .menuButton {
     top: 30px;
     left: 20px;
@@ -540,7 +540,7 @@ header .talk {
   transition: all 0.5s ease-out;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .mainNav {
     width: 350px;
   }
@@ -586,7 +586,7 @@ header .talk {
   margin-top: 150px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .socialMediaNav {
     margin-top: 20px;
   }
@@ -606,7 +606,7 @@ header .talk {
           align-items: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .socialMediaNav .socialList {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -667,7 +667,7 @@ header .talk {
   margin-top: 40px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .aboutSection .sixty {
     padding-top: 60px;
     padding-bottom: 20px;
@@ -695,14 +695,7 @@ header .talk {
           align-items: center;
 }
 
-@media (max-width: 1024px) {
-  .aboutSection .forty {
-    -webkit-clip-path: inset(18.5% 0 18.5% 0);
-            clip-path: inset(18.5% 0 18.5% 0);
-  }
-}
-
-@media (max-width: 599px) {
+@media (max-width: 800px) {
   .aboutSection .forty {
     display: none;
   }
@@ -758,7 +751,7 @@ header .talk {
   font-size: 2.5rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .skillsSection .forty {
     padding-bottom: 20px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -786,7 +779,7 @@ header .talk {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .skillsSection .skillsList {
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -803,7 +796,7 @@ header .talk {
   font-size: 12.0rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .skillsSection i {
     font-size: 8.0rem;
   }
@@ -838,7 +831,7 @@ header .talk {
   background: #e9e9f7;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .portfolioSection .sixty {
     width: 96%;
     padding: 20px 5px;
@@ -889,7 +882,7 @@ header .talk {
   border-radius: 5px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .portfolioSection .portfolioItem {
     min-width: 750px;
   }
@@ -1021,7 +1014,7 @@ header .talk {
   background: #352d68;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .contactSection .flexParent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1035,7 +1028,7 @@ header .talk {
           clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 100%, 40% 75%, 0% 75%);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .contactSection .forty {
     padding: 20px 15px;
     width: 100%;
@@ -1064,7 +1057,7 @@ header .talk {
   padding-top: 60px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .contactSection .sixty {
     width: 100%;
     padding: 0 5px 20px;
@@ -1082,7 +1075,7 @@ header .talk {
   text-shadow: 2px 2px 1px #000;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .contactSection a {
     font-size: 2.2rem;
     margin: 10px;
@@ -1112,7 +1105,7 @@ header .talk {
   background: transparent;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 800px) {
   .contactSection form {
     padding-top: 0;
   }
