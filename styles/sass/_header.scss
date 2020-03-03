@@ -3,74 +3,34 @@
 header {
     position: relative;
 
-    .forty {
-        max-width: 40%;
-        padding: 0;
-        background: linear-gradient(#4d5e6e, $backgroundMain);
-        
-        img {
-            height: 100%;
-        }
-
-        @include forTablet {
-            display: none;
-        }
-    }
-
-    .sixty {
-        padding-top: 30px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        // @include forDesktop {
-        //     padding-top: 200px;
-        // }  
-        
-        @include forTablet {
-            max-width: 100%;
-            padding-top: 130px;
-            
-            text-align: center;
-        } 
-
-        @include forPhone {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-    }
+    padding-top: 80px;
 
     h2 {
-        margin-top: 10px;
-        font-size: 4.0rem;
-        color: $headingMain;
+        margin: 10px 0;
+        padding: 10px 0 20px;
+        border-top: 1px solid $textMain;
+        font-size: 4.2rem;
+        font-weight: 300;
     }
 
     .talk {
         position: absolute;
-        top: 40px;
-        right: 100px;
+        top: 13px;
+        right: 10px;
 
         transition: all 0.2s ease-out;
-
-        @include forTablet {
-            top: 30px;
-            right: 20px; 
-        }
     }
 }
 
 .menuButton {
-    top: 40px;
-    left: 80px;
+    top: 10px;
+    left: 10px;
     position: fixed;
     overflow: hidden;
     border-radius: 4px;
 
-    background: $indexBackground;
-    color: $textMain;
+    background: $textMain;
+    color: $backgroundMain;
 
     z-index: 3;
 
@@ -78,17 +38,8 @@ header {
         margin: 4px;
         
         z-index: 2;
-        font-size: 5.5rem;
+        font-size: 4.0rem;
         text-shadow: 1px 1px 1px #005;
-
-        @include forPhone {
-            font-size: 4.0rem;
-        }
-    }
-
-    @include forTablet {
-        top: 30px;
-        left: 20px; 
     }
 }
 
@@ -138,7 +89,7 @@ header {
     top: 0;
     left: -1000px;
 
-    width: 450px;
+    min-width: 320px;
     border: 5px solid $backgroundMain;
     box-shadow: 0 0 5px $backgroundMain;
 
@@ -148,14 +99,6 @@ header {
     background: $indexBackground;
 
     transition: all 0.5s ease-out;
-
-    @include forTablet {
-        width: 350px;
-    }
-
-    @include forPhone {
-        width: 320px;
-    }
 
     a {        
         font-size: 3.6rem;
@@ -184,60 +127,5 @@ header {
 }
 
 .socialMediaNav {
-    margin-top: 150px;
     
-    @include forTablet {
-        margin-top: 20px;
-    }
-
-    .socialList {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left;
-        align-items: center;
-
-        @include forTablet {
-            :first-child {
-                width: 100%;
-            }
-
-            justify-content: center;
-        }
-
-        @include forPhone {
-            justify-content: left;
-        }
-
-        .socialLink {
-            margin: 40px 20px 20px;
-
-            @include forPhone {
-                margin: 20px 0;
-                margin-left: 10px;
-            }
-        }
-
-        .socialLink a {
-            padding: 10px;
-            transition: all 0.2s ease-out;
-
-            // @include forTablet {
-            //     padding-right: 50px;
-            // }
-
-            @include forPhone {
-                padding: 15px 15px;
-            }
-        }
-
-        .socialLink a.highlighted {
-            padding: 5px 15px;
-            margin-right: 10px;
-
-            @include forPhone {
-                margin-right: 0;
-            }
-        }
-
-    }
 }

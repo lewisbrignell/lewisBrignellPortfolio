@@ -1,62 +1,24 @@
 // styles for skill set section within main
 
 .skillsSection {
-    background: $indexBackground;
+    padding-top: 40px;
+    width: 100%;
+    min-height: 10vh;
 
-    .flexParent {
-        @include forPhone {
-            flex-direction: column;
-        }
+    p {
+        color: $headingMain;
+        font-size: 2.5rem;
     }
 
-    .sixty {
-        padding-top: 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background: $indexBackground;
-
-        @include forPhone {
-            width: 100%;
-        }
-    }
-
-    .forty {
-        clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-
-        p {
-            color: $headingMain;
-            font-size: 2.5rem;
-        }
-
-        @include forTablet {
-            padding-bottom: 20px;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-
-        @include forPhone {
-            padding-top: 40px;
-            width: 100%;
-            min-height: 10vh;
-
-            ul {
-                display: none;
-            }
-        }
-
-    }
+    // ul {
+    //     display: none;
+    // }
 
     .skillsList {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-
-        @include forTablet {
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-        }
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        
     }
 
     .skillItem {
@@ -64,11 +26,7 @@
     }
 
     i {
-        font-size: 12.0rem;
-
-        @include forTablet {
-            font-size: 8.0rem;
-        }
+        font-size: 8.0rem;
     }
 
     .skillItem img {
