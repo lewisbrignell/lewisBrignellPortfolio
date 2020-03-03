@@ -443,6 +443,13 @@ header .talk {
   padding: 0 20px;
 }
 
+.socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+}
+
 .skillsSection {
   padding-top: 40px;
   width: 100%;
